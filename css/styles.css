@@ -49,11 +49,14 @@ p,
 img {
     margin: 0;
 }
+
+
  
 
 .img {
     display: block;
     max-width: 100%;
+    margin: 0;
     height: auto;
     
 }
@@ -126,7 +129,7 @@ img {
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    margin: calc(-1 * var(--indent) / 2);
+    margin: calc((-1 * var(--indent)) / 2);
 }
 
 .card-set-item {
@@ -272,18 +275,30 @@ img {
     line-height: 1.17;
     text-align: center;
     color: var(--txt-deep-grey);
+    
     margin-bottom: 50px;
 }
 
+.best-icon {
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
 
+}
 
+.best-icon-border {
+    
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
 .section-one-h3-best {
     
     font-size: 14px;
     line-height: 1.14;
-    
-    text-transform: uppercase;
+     text-transform: uppercase;
     color: var(--txt-deep-grey);
+    margin-top: 30px;
     margin-bottom: 7px;}
     
 .section-one-p-best {
@@ -328,8 +343,42 @@ img {
     line-height: 1.19;
     /* identical to box height */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     } 
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}    
+
+.social-media-item:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.social-media-link:hover, 
+.social-media-link:focus  {
+    color: var(--txt-white);
+    background-color:  #2196F3;
+}
+
+.social-media-icon {
+    fill: currentColor;
+}
+
 
 .banda-list {
     --items: 4;
@@ -376,17 +425,21 @@ img {
 
 .card-top {
     margin-top: 34px;
+    
 }
  
 
 
+
+
+  
 .portfolio-border {
-    
-    padding: 20px 25px;
+    width: 368px;
     border: 1px solid #EEEEEE;
     border-top: none;
-       
-    }
+    
+}
+
 
 
 .portfolio-h2-style {
@@ -395,12 +448,18 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--txt-deep-grey);
+    padding-top: 20px;
+    padding-left: 24px;
     
 } 
 
 .pottfolio-p-style {
     line-height: 1.88;
     color: var(--txt-gray);
+    padding-top: 4px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
 }
 
 
