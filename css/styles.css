@@ -150,6 +150,7 @@ img {
     }
     
 .heder-portfolio-border {
+    margin-bottom: 5px;
     border-bottom: 1px solid #ECECEC;
     }
         
@@ -216,33 +217,24 @@ img {
 .phone-svg:hover,
 .mail-svg:focus,
 .phone-svg:focus,
-.current
-{color: var(--accent-txt-color);
-fill: var(--accent-txt-color);}
-
-.mail-svg {
-    
-    margin-right: 10px;
-    fill: var(--txt-gray); 
-    
-
+.current {color: var(--accent-txt-color);
 }
 
+
+.mail-svg,
 .phone-svg {
-    
+     display: inline-block;
+    vertical-align: middle;    
     margin-right: 10px;
     fill: var(--txt-gray);
     
 }
 
-.mail-svg:hover,
-.phone-svg:hover,
-.mail-svg:focus,
-.phone-svg:focus {
-    fll: var(--accent-txt-color);
-    }
-
-
+.mail-svg,
+.phone-svg
+ {
+    fill: currentColor;
+}
 
 
 
@@ -485,6 +477,8 @@ fill: currentColor;
 .btn-portfolio:active {
     color: var(--txt-white);
     background-color: var(--accent-txt-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 }
 
 
@@ -508,6 +502,7 @@ fill: currentColor;
     width: 368px;
     border: 1px solid #EEEEEE;
     border-top: none;
+   
     
 }
 
@@ -533,6 +528,19 @@ fill: currentColor;
 
 }
 
+.card-border {
+    display: block;
+}
+.card-border:hover,
+.card-border:focus
+ {
+    box-shadow: 0px 3px 1px 
+    rgba(0, 0, 0, 0.1), 0px 1px 2px 
+    rgba(0, 0, 0, 0.08), 0px 2px 2px 
+    rgba(0, 0, 0, 0.12);
+
+        
+} 
 
 
 
