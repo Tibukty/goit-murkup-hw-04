@@ -41,6 +41,15 @@ body
 
 /* resrt */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
 h1,
 h2,
 h3,
@@ -250,8 +259,9 @@ img {
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/hw-04-background.jpg);
+    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+     url(../images/hw-04-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -308,16 +318,13 @@ img {
     margin-bottom: 50px;
 }
 
-.best-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 270px;
-        height: 120px;
-        }
+
 
 .best-icon-border {
-    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
     
@@ -424,14 +431,16 @@ img {
     --items: 6;
 }
 
-.clients-link { display: flex;
+.clients-link {
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
     
+    height: 92px;
     border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    border-radius: 4px;}
+
+.clients-link {
     color:  #AFB1B8;
 
 }
@@ -454,9 +463,10 @@ fill: currentColor;
 
 
 
-.list-portfolio-container {
+.btn-portfolio-container {
         align-items: center;
         justify-content: center;
+        margin-bottom: 50px;
         
       }
 
@@ -468,8 +478,12 @@ fill: currentColor;
         color: var(--txt-deep-grey);
         background-color: transparent;
         background-color: var(--txt-light-gray);
-        margin-left: 10px;
+        margin-right: 8px;
+        
     }
+
+    .btn-portfolio:not(:last-child) {
+         margin-right: 8px;}
 
 
 .btn-portfolio:hover,
@@ -478,7 +492,7 @@ fill: currentColor;
     color: var(--txt-white);
     background-color: var(--accent-txt-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
+    border-radius: 4px;
 }
 
 
@@ -486,25 +500,14 @@ fill: currentColor;
 
 
 
-
-
-.card-top {
-    margin-top: 34px;
+.card-set-item { 
     
 }
  
-
-
-
-
-  
 .portfolio-border {
-    width: 368px;
     border: 1px solid #EEEEEE;
     border-top: none;
-   
-    
-}
+   }
 
 
 
