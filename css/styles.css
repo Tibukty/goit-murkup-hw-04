@@ -374,7 +374,6 @@ img {
     
     font-weight: 500;
     line-height: 1.19;
-    /* identical to box height */
     text-align: center;
     color: var(--txt-deep-grey);
     margin-top: 30px;
@@ -438,28 +437,23 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     height: 92px;
     border: 1px solid #AFB1B8;
-    border-radius: 4px;}
-
-.clients-link {
-    color:  #AFB1B8;
-
+    border-radius: 4px;
+    color: #AFB1B8;
 }
+
 
 .clients-link:hover,
 .clients-link:focus {
-    color: #2196F3;
-    border: 1px solid #2196F3;
+    color: var(--accent-txt-color);
+    border: 1px solid var(--accent-txt-color);
     background-color: var(--txt-white);
 }
 
-
-        .clients-icon {
-fill: currentColor;
+.clients-icon {
+    fill: currentColor;
 }
-
 
 
 /* main-portfolio */  
@@ -629,9 +623,9 @@ color: var(--txt-white);
  }
  
  .footer-media-link:hover,
- .footeer-media-link:focus {
+ .footer-media-link:focus {
      color: var(--txt-white);
-     background-color: #2196F3;
+     background-color:  var(--accent-txt-color);
  }
 
  .footer-media-icon {
