@@ -31,7 +31,7 @@
     <!-- heder -->
 
     <header>
-      <section class="container section-flex heder-container heder-portfolio-border-one">
+      <div class="container section-flex heder-container">
         <nav class="heder-nav section-flex">
           <a class="logo-web logo-heder link" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
@@ -51,21 +51,23 @@
 
         <ul class="section-flex list heder-group heder-padding-one">
           <li class="heder-group-item">
-            <a class="heder-contact link" href="mailito:info@devstudio.com"
-              ><svg class="mail-svg" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com</a
-            >
+            <a class="heder-contact link" href="mailito:info@devstudio.com">
+              <svg class="mail-svg" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="heder-group-item">
             <a class="heder-contact link" href="tel:+380961111111"
               ><svg class="phone-svg" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use></svg
-              >+38 096 111 11 11</a
-            >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
-      </section>
+      </div>
     </header>
 
     <!-- main -->
@@ -73,14 +75,10 @@
     <main>
       <!-- section hero -->
 
-      <section class="section hero-background">
+      <section class="hero-background">
         <div class="container">
-          <ul class="list hero-list">
-            <li>
-              <h1 class="section-one-h1">Эффективные решения для вашего бизнеса</h1>
-            </li>
-            <li><button class="btn-one btn" type="button">Заказать услугу</button></li>
-          </ul>
+          <h1 class="section-one-h1">Эффективные решения для вашего бизнеса</h1>
+          <button class="btn-one btn" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -90,7 +88,7 @@
         <div class="container">
           <h2 class="visually-hidden">Особенности и преимущества</h2>
           <ul class="list best-list card-set">
-            <li class="card-set-item">
+            <li class="card-set-best">
               <div class="best-icon-border">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -102,7 +100,7 @@
               </p>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set-best">
               <div class="best-icon-border">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -114,7 +112,7 @@
               </p>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set-best">
               <div class="best-icon-border">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -126,7 +124,7 @@
               </p>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set-best">
               <div class="best-icon-border">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -172,24 +170,24 @@
         </div>
       </section>
 
-      <!-- section banda  -->
+      <!-- section team  -->
 
-      <section class="section banda-background section-top">
+      <section class="section team-background">
         <div class="container">
           <h2 class="section-one-h2">Наша команда</h2>
 
-          <ul class="list banda-list card-set">
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-4.jpg"
-                  alt="фото Игорь Демьяненко"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Игорь Демьяненко</h3>
-                <p lang="en" class="section-one-p-banda">Product Designer</p>
+          <ul class="list card-set">
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-4.jpg"
+                alt="фото Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Игорь Демьяненко</h3>
+                <p lang="en" class="section-one-p-team">Product Designer</p>
                 <ul class="social-media list">
                   <li class="social-media-item">
                     <a
@@ -243,17 +241,17 @@
               </div>
             </li>
 
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-5.jpg"
-                  alt="фото Ольга Репина"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Ольга Репина</h3>
-                <p lang="en" class="section-one-p-banda">Frontend Developer</p>
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-5.jpg"
+                alt="фото Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Ольга Репина</h3>
+                <p lang="en" class="section-one-p-team">Frontend Developer</p>
                 <ul class="social-media list">
                   <li class="social-media-item">
                     <a
@@ -307,17 +305,17 @@
               </div>
             </li>
 
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-6.jpg"
-                  alt="фото Николай Тарасов"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Николай Тарасов</h3>
-                <p lang="en" class="section-one-p-banda">Marketing</p>
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-6.jpg"
+                alt="фото Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Николай Тарасов</h3>
+                <p lang="en" class="section-one-p-team">Marketing</p>
                 <ul class="social-media list">
                   <li class="social-media-item">
                     <a
@@ -371,17 +369,17 @@
               </div>
             </li>
 
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-7.jpg"
-                  alt="фото Михаил Ермаков"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Михаил Ермаков</h3>
-                <p lang="en" class="section-one-p-banda">UI Designer</p>
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-7.jpg"
+                alt="фото Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Михаил Ермаков</h3>
+                <p lang="en" class="section-one-p-team">UI Designer</p>
                 <ul class="social-media list">
                   <li class="social-media-item">
                     <a
@@ -438,13 +436,13 @@
         </div>
       </section>
 
-      <!-- clients -->
+      <!-- section clients -->
 
       <section class="section">
         <div class="container">
           <h2 class="section-one-h2">Постоянные клиенты</h2>
           <ul class="list clients-list card-set">
-            <li class="clients-item card-set-item">
+            <li class="">
               <a
                 class="link clients-link"
                 href=""
@@ -458,7 +456,7 @@
               </a>
             </li>
 
-            <li class="clients-item card-set-item">
+            <li class="clients-item">
               <a
                 class="link clients-link"
                 href=""
@@ -472,7 +470,7 @@
               </a>
             </li>
 
-            <li class="clients-item card-set-item">
+            <li class="clients-item">
               <a
                 class="link clients-link"
                 href=""
@@ -486,7 +484,7 @@
               </a>
             </li>
 
-            <li class="clients-item card-set-item">
+            <li class="clients-item">
               <a
                 class="link clients-link"
                 href=""
@@ -500,7 +498,7 @@
               </a>
             </li>
 
-            <li class="clients-item card-set-item">
+            <li class="clients-item">
               <a
                 class="link clients-link"
                 href=""
@@ -514,7 +512,7 @@
               </a>
             </li>
 
-            <li class="clients-item card-set-item">
+            <li class="clients-item">
               <a
                 class="link clients-link"
                 href=""
@@ -534,93 +532,93 @@
 
     <!-- footer -->
 
-    <footer>
-      <section class="footer-background section">
-        <div class="container section-flex">
-          <div class="footer-adress-contact">
-            <div class="footer-logo">
-              <a class="logo-web link" href="./index.html"
-                >Web<span class="footer-logo-studio">Studio</span></a
-              >
-            </div>
+    <!--footer contacts-->
 
+    <footer class="footer">
+      <div class="container footer-position section-flex">
+        <div class="footer-contacts">
+          <a class="logo-web link" href="./index.html"
+            >Web<span class="footer-logo-studio">Studio</span></a
+          >
+
+          <address class="footer-address-it">
             <ul class="list">
-              <li class="address-item">
-                <address>
-                  <a
-                    class="footer-address link"
-                    href="https://goo.gl/maps/yNYyYPv2zE2rzLxP9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </address>
+              <li class="footer-contact-position">
+                <a
+                  class="footer-address link"
+                  href="https://goo.gl/maps/yNYyYPv2zE2rzLxP9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
-              <li class="address-item">
+              <li class="footer-contact-position">
                 <a class="footer-contact link" href="mailito:info@example.com">info@example.com</a>
               </li>
-              <li class="address-item">
+              <li class="footer-contact-position">
                 <a class="footer-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
-          </div>
-
-          <div class="section-footer-media">
-            <h3 class="footer-h3">присоединяйтесь</h3>
-
-            <ul class="footer-media-list list">
-              <li class="footer-media-item">
-                <a
-                  class="footer-media-link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="instagram"
-                >
-                  <svg class="footer-media-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram-01"></use></svg
-                ></a>
-              </li>
-              <li class="footer-media-item">
-                <a
-                  class="footer-media-link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="twitter"
-                >
-                  <svg class="footer-media-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter-02"></use></svg
-                ></a>
-              </li>
-              <li class="footer-media-item">
-                <a
-                  class="footer-media-link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="facebook"
-                >
-                  <svg class="footer-media-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook-03"></use></svg
-                ></a>
-              </li>
-              <li class="footer-media-item">
-                <a
-                  class="footer-media-link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="linkedin"
-                >
-                  <svg class="footer-media-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin-04"></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
+          </address>
         </div>
-      </section>
+
+        <!--footer media-->
+
+        <div class="footer-media">
+          <h3 class="footer-h3">присоединяйтесь</h3>
+
+          <ul class="footer-media-list list">
+            <li class="footer-media-item">
+              <a
+                class="footer-media-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-01"></use></svg
+              ></a>
+            </li>
+            <li class="footer-media-item">
+              <a
+                class="footer-media-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter"
+              >
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-02"></use></svg
+              ></a>
+            </li>
+            <li class="footer-media-item">
+              <a
+                class="footer-media-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-03"></use></svg
+              ></a>
+            </li>
+            <li class="footer-media-item">
+              <a
+                class="footer-media-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
+                <svg class="footer-media-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-04"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
