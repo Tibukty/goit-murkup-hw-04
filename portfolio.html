@@ -30,13 +30,13 @@
   <body>
     <!-- heder -->
 
-    <header>
-      <section class="container section-flex heder-container heder-portfolio-border">
+    <header class="heder">
+      <div class="container section-flex">
         <nav class="heder-nav section-flex">
           <a class="logo-web logo-heder link" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <ul class="list section-flex heder-padding-one">
+          <ul class="list section-flex heder-padding">
             <li class="heder-list-item">
               <a class="heder-link link" href="./index.html">Студия</a>
             </li>
@@ -49,23 +49,23 @@
           </ul>
         </nav>
 
-        <ul class="section-flex list heder-group heder-padding-one">
+        <ul class="section-flex list heder-group heder-padding">
           <li class="heder-group-item">
-            <a class="heder-contact link" href="mailito:info@devstudio.com"
-              ><svg class="mail-svg" width="16" height="12">
+            <a class="heder-contact link" href="mailito:info@devstudio.com">
+              <svg class="mail-svg" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com</a
-            >
+              >info@devstudio.com
+            </a>
           </li>
           <li class="heder-group-item">
-            <a class="heder-contact link" href="tel:+380961111111"
-              ><svg class="phone-svg" width="10" height="16">
+            <a class="heder-contact link" href="tel:+380961111111">
+              <svg class="phone-svg" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use></svg
-              >+38 096 111 11 11</a
-            >
+              >+38 096 111 11 11
+            </a>
           </li>
         </ul>
-      </section>
+      </div>
     </header>
 
     <!-- main -->
@@ -225,18 +225,19 @@
         </div>
       </section>
     </main>
+
     <!-- footer -->
 
-    <!--footer contacts-->
-
     <footer class="footer">
-      <div class="container footer-position section-flex">
+      <div class="container footer-section-flex">
+        <!--footer contacts-->
+
         <div class="footer-contacts">
           <a class="logo-web link" href="./index.html"
             >Web<span class="footer-logo-studio">Studio</span></a
           >
 
-          <address class="footer-address-it">
+          <address class="address footer-address-top">
             <ul class="list">
               <li class="footer-contact-position">
                 <a
