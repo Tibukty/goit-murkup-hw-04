@@ -253,6 +253,7 @@ img {
 
 .hero-background {
         max-width: 1600px;
+        max-height: 600px;
         margin-right: auto;
         margin-left: auto;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -367,7 +368,7 @@ img {
 }
 
 .team-title {
-    margin: 30px 0;
+    padding: 30px 0;
     text-align: center;
 
 }
@@ -497,13 +498,17 @@ img {
 
 .card-set-item {
     width: 370px;
-    background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
 }
 
-.card-set-item:hover,
-.card-set-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.card-shadow {
+    display: block;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+ }
+
+.card-shadow:hover,
+.card-shadow:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .text-padding {
